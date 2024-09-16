@@ -1,0 +1,731 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+    
+  .image-container {
+    background-image: url('{{ url_for("static", filename="images/home.jpg") }}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .text-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: rgba(255, 217, 0, 0.879);
+}
+
+@media (max-width: 1024px) {
+    .text-logo {
+        font-size: 18px;
+    }
+
+    .text h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-logo {
+        font-size: 16px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .text h1 {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-logo {
+        font-size: 14px;
+    }
+
+    .text h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+}
+
+  
+  .text1 {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color : rgb(248, 212, 13);
+  }
+  
+.dropdownbutton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color:  green;
+    border: 2px solid green; /* Add border */
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdownbutton:hover {
+    background-color: black;
+    border-color: skyblue; /* Change border color on hover */
+}
+  
+*{
+    box-sizing: border-box;
+}
+  
+  /* Style the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+  
+/* Header Styles */
+
+/* Heading Color */
+h1, h2, h3 {
+  color: rgb(13, 243, 44); /* Dark gray */
+}
+
+/* Paragraph Color */
+p {
+  color: whitesmoke; /* Medium gray */
+}
+
+/* Accent Color */
+.accent {
+  color: #007bff; /* Blue */
+}
+
+.wellcome {
+  background-color: whitesmoke; /* Light gray background */
+  color: black; /* Dark text color */
+  text-align: center; /* Center text */
+  padding: 50px 20px; /* Padding around the text */
+  margin: 20px auto; /* Centered horizontally with margin */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 800px; /* Maximum width for larger screens */
+}
+
+.wellcome h1 {
+  color :rgb(24, 9, 9);
+  font-size: 2.5em; /* Large font size for the header */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+.wellcome p {
+  color :rgb(24, 9, 9);
+  font-size: 1.2em; /* Slightly larger text for the paragraph */
+  line-height: 1.6; /* Increased line height for readability */
+}
+
+.header1 {
+  padding: 30px;
+  text-align: center;
+  background-color: skyblue;
+}
+
+.header1 h1 {
+  font-size: 36px;
+  color : rgb(148, 199, 9);
+  margin-bottom: 10px;
+}
+
+.header1 p {
+  font-size: 18px;
+  color : whitesmoke;
+  margin-bottom: 20px;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background-color: rgb(189, 79, 11);
+}
+
+.header h1 {
+  font-size: 36px;
+  color : rgb(148, 199, 9);
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 18px;
+  color : whitesmoke;
+  margin-bottom: 20px;
+}
+
+.header3 {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header3 h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.header3 p {
+  font-size: 16px;
+  color: #666;
+}
+
+.cart-items {
+  margin: 20px 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item:last-child {
+  border-bottom: none;
+}
+
+#checkout {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#checkout:hover {
+  background-color: #ff4500;
+}
+
+
+/* Form Styles */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+button[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: rgb(29, 213, 23);
+}
+
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f7f7f7;
+    color: black;
+}
+
+.about-section h1 {
+    color : black;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.about-section p {
+    color: black;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .container h2{
+    color : black;
+  }
+  
+  .email-link {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.email-link:hover {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: black;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: burlywood;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  /* style for product page */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color : whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  background-color: #11f65a;
+  color: #080807ba;
+  text-align: center;
+  padding: 1rem;
+}
+
+.header h1 {
+  margin: 0;
+  color :rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+}
+
+.header p {
+  font-size: 1.1rem;
+  color:rgba(0, 0, 0, 0.5);
+  margin-bottom: 1.5rem;
+}
+
+
+.add-to-cart {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+
+/* for sytle of footer */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-section {
+  background: rgb(24, 9, 9);
+  color: whitesmoke;
+  position: relative;
+}
+
+.footer-cta {
+  border-bottom: 1px solid #373636;
+  padding: 30px 0;
+}
+
+.single-cta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+.cta-text h4 {
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.cta-text span, .cta-text a {
+  color: #757575;
+  font-size: 15px;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+  padding-left: 150px;
+}
+
+/* this is hover for map-link class */
+
+.map-link {
+  color: #007bff;
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: color 0.3s, text-decoration 0.3s; 
+}
+
+.map-link:hover {
+  color: #09dc33;
+  text-decoration: underline;
+}
+/* General styles for the link */
+
+/* make the hover on phone call */
+
+.phone-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold; 
+  transition: color 0.3s, text-decoration 0.3s; 
+}
+
+.phone-link:hover {
+  color: #a0d813; 
+  text-decoration: underline; 
+}
+
+
+/* make the phone call on phone call*/
+
+
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+/* for facebook */
+.facebook-bg {
+  background-color: #3B5998;
+  padding: 8px 12px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.facebook-bg svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+/* for facebook */
+
+/* for telegram */
+.telegram-bg {
+  background-color: #2ca5e0;
+  padding: 8px 12px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.telegram-bg svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+/* for telegram */
+
+/* for instagram */
+.instagram-bg {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  padding: 8px 12px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.instagram-bg svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+/* for instagram */
+
+/* make the hover on socail icon */
+
+.footer-social-icon a {
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-social-icon a:hover {
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Specific styles for individual social media icons */
+.facebook-bg:hover {
+  background-color: #2d4373; /* Darker shade of Facebook blue */
+}
+
+.telegram-bg:hover {
+  background-color: #229ed9; /* Darker shade of Telegram blue */
+} 
+
+.instagram-bg:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #1c1c1c 90%); /* Darker Instagram gradient */
+}
+
+/* make the hover on socail icon */
+
+.footer-widget-heading h3 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 40px;
+position: relative;
+}
+.footer-widget-heading h3::before {
+content: "";
+position: absolute;
+left: 0;
+bottom: -15px;
+height: 2px;
+width: 50px;
+background: #ff5e14;
+}
+.footer-widget ul li {
+display: inline-block;
+float: left;
+width: 50%;
+margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+color: #ff5e14;
+}
+.footer-widget ul li a {
+color: peachpuff;
+text-transform: capitalize;
+}
+
+
+.copyright-area{
+background: whitesmoke;
+padding: 25px 0;
+}
+.copyright-text p {
+margin: 0;
+font-size: 14px;
+color: #14c4e3;
+}
+.copyright-text p a{
+color: #ff5e14;
+}
+.footer-menu li {
+display: inline-block;
+margin-left: 40px;
+}
+.footer-menu li:hover a{
+color: black;
+}
+.footer-menu li a {
+font-size: 14px;
+color: goldenrod;
+}
+
+/* login style */
+
+
+.login {
+  width: 300px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background: #dff0d8;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+  color: #3c763d;
+  margin-top: 20px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px); /* Adjust this value based on the height of your navbar and message */
+}
+
+.login {
+  width: 300px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-screen {
+  padding: 20px;
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-title h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.login-form .control-group {
+  margin-bottom: 15px;
+}
+
+.login-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* login style */
+

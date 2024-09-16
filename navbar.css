@@ -1,0 +1,116 @@
+/* General navbar styling */
+.navbar {
+  overflow: hidden;
+  background-color: rgb(225, 231, 227);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  display: flex;
+  align-items: center;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown toggle link */
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+/* Dropdown menu styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(225, 231, 227);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Ensure all nav links are in a row and not wrapping */
+.navbar > a {
+  margin-right: 10px;
+}
+
+/* Position search form to the right of the last link */
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* Style search form elements */
+.search-form input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-form button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  margin-left: 5px;
+}
+
+.search-form button i {
+  font-size: 20px;
+  color: white;
+}
+
+/* Align register button next to other navigation links */
+.navbar .register-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #06d6c5;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+/* Hover effect for register button */
+.navbar .register-link:hover {
+  background: #096bce;
+}
+
+/* Ensure proper alignment of navbar items */
+.navbar > .search-form {
+  margin-left: auto;
+}
